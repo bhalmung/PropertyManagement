@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PropertyManagement.DB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,6 +16,7 @@ namespace PropertyManagement.Controllers
 
         public ActionResult About()
         {
+          
             ViewBag.Message = "Your application description 1.";
 
             return View();
