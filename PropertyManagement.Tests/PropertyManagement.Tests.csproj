@@ -82,6 +82,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\FeedPareserTest.cs" />
+    <Compile Include="Controllers\Feeds\TestFeed.cs" />
+    <Compile Include="Controllers\Feeds\TestFeedEmpty.cs" />
+    <Compile Include="Controllers\Feeds\TestFeedInvalidFeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>

@@ -9,7 +9,7 @@ using PropertyManagement.Controllers;
 
 namespace PropertyManagement.Tests.Controllers
 {
-    [TestClass]
+    //[TestClass]
     public class HomeControllerTest
     {
         [TestMethod]

@@ -164,6 +164,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BAL\Exceptions\FeedURLException.cs" />
+    <Compile Include="BAL\FeedParser.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DB\PropertyManagementContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -217,7 +219,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="BAL\" />
+    <Folder Include="BAL\Feeds\" />
     <Folder Include="DAL\" />
   </ItemGroup>
   <ItemGroup>
