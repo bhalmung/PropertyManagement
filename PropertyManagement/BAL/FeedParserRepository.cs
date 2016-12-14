@@ -7,10 +7,10 @@ using System.Web;
 
 namespace PropertyManagement.BAL
 {
-    public abstract class FeedParser
+    public abstract class FeedParserRepository
     {
         public abstract string URL { get;    }
-        public FeedParser()
+        public FeedParserRepository()
         {
 
         }

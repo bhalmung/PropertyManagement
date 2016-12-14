@@ -165,7 +165,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="BAL\Exceptions\FeedURLException.cs" />
-    <Compile Include="BAL\FeedParser.cs" />
+    <Compile Include="BAL\FeedLoggerRepository.cs" />
+    <Compile Include="BAL\FeedParserRepository.cs" />
+    <Compile Include="BAL\Interfaces\IRepository.cs" />
+    <Compile Include="BAL\Repository.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DB\PropertyManagementContext.cs" />
     <Compile Include="Global.asax.cs">

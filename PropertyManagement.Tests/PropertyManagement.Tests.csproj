@@ -82,6 +82,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\FeedLoggerTest.cs" />
     <Compile Include="Controllers\FeedPareserTest.cs" />
     <Compile Include="Controllers\Feeds\TestFeed.cs" />
     <Compile Include="Controllers\Feeds\TestFeedEmpty.cs" />
