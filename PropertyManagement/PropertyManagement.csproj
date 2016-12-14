@@ -167,6 +167,7 @@
     <Compile Include="BAL\Exceptions\FeedURLException.cs" />
     <Compile Include="BAL\FeedLoggerRepository.cs" />
     <Compile Include="BAL\FeedParserRepository.cs" />
+    <Compile Include="BAL\Interfaces\IFeedLogger.cs" />
     <Compile Include="BAL\Interfaces\IRepository.cs" />
     <Compile Include="BAL\Repository.cs" />
     <Compile Include="Controllers\HomeController.cs" />

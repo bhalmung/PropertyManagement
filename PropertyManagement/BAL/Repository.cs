@@ -1,4 +1,4 @@
-﻿using PropertyManagement.Interfaces;
+﻿using PropertyManagement.BAL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
