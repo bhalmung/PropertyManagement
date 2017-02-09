@@ -6,7 +6,7 @@ using System.Web;
 
 namespace PropertyManagement.BAL.Interfaces
 {
-    public interface IFeedLogger:IRepository<FeedLog>
+    public interface IFeedLoggerRepository:IRepository<FeedLog>
     {
 
     }

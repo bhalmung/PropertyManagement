@@ -1,6 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
+using PropertyManagement.BAL;
+using PropertyManagement.BAL.Interfaces;
+using PropertyManagement.DB;
+using PropertyManagement.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,11 +17,15 @@ namespace PropertyManagement.Tests.Controllers
    public class FeedLoggerTest
     {
         [TestMethod]
-        public void FeedParser_CheckValidFeedURL_ReturnsFeedString()
+        public void FeedLogger_AddFeedLog_AddFeedLog()
         {
-            //var feedParser = new TestFeed();
-        //    var str = feedParser.FalkeGetStringFrmURL();
-         //   StringAssert.Contains(str, "properties");
+            var context = new Mock<PropertyManagementContext>();
+            var FeedLogger = new Mock<DbSet<FeedLog>>();
+
+            FeedLogger.Setup(x=>x.Add(It.IsAny<FeedLog>())).Returns((FeedLog log)=>log);
+            context.Setup(x => x.FeedLog).Returns(FeedLogger.Object);
+         IFeedLoggerRepository logger = new FeedLoggerRepository(context.Object);
+       
         }
     }
 }
