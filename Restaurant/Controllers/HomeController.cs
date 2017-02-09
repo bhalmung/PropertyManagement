@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DomainLogic.Serivce;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,14 @@ namespace Restaurant.Controllers
 {
     public class HomeController : Controller
     {
+        IRestaurentService _RestaurentService;
+        public HomeController(IRestaurentService s)
+        {
+            _RestaurentService = s;
+        }
         public ActionResult Index()
         {
+            var s = _RestaurentService.GetAllRestaurent();
             return View();
         }
 

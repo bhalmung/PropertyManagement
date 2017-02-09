@@ -1,7 +1,11 @@
-﻿using System;
+﻿using Factory;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
+using System.Web.Compilation;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -16,6 +20,9 @@ namespace Restaurant
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            IoCConfig.RegisterDependencies(BuildManager.GetReferencedAssemblies().Cast<Assembly>().ToArray());
+
+
         }
     }
 }
