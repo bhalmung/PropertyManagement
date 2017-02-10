@@ -15,7 +15,7 @@ namespace Models
         public string City { get; set; }
         public string PostCode { get; set; }
 
-        public IEnumerable<RestaurentComments> Comments { get; set; }
-        public IEnumerable<RestaurentRating> Ratings { get; set; }
+        public List<RestaurentComments> Comments { get; set; }
+        public List<RestaurentRating> Ratings { get; set; }
     }
 }
