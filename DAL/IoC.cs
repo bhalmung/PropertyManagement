@@ -11,7 +11,7 @@ namespace DAL
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<RestaurentdbContext>().As<RestaurentdbContext>();
+            builder.RegisterType<RestaurantdbContext>().As<RestaurantdbContext>();
             builder.RegisterType<RestaurantRepo >().As<RestaurantRepo>();
         }
     }

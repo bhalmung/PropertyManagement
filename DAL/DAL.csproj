@@ -62,9 +62,21 @@
     <Compile Include="Migrations\201702101444357_Init2.Designer.cs">
       <DependentUpon>201702101444357_Init2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702131517292_NameChange.cs" />
+    <Compile Include="Migrations\201702131517292_NameChange.Designer.cs">
+      <DependentUpon>201702131517292_NameChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702131536535_NameChange_TablePrefix.cs" />
+    <Compile Include="Migrations\201702131536535_NameChange_TablePrefix.Designer.cs">
+      <DependentUpon>201702131536535_NameChange_TablePrefix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702141009255_NameChange_TablePrefix1.cs" />
+    <Compile Include="Migrations\201702141009255_NameChange_TablePrefix1.Designer.cs">
+      <DependentUpon>201702141009255_NameChange_TablePrefix1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="RestaurantRepo.cs" />
-    <Compile Include="RestaurentdbContext.cs" />
+    <Compile Include="RestaurantdbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +95,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702101444357_Init2.resx">
       <DependentUpon>201702101444357_Init2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702131517292_NameChange.resx">
+      <DependentUpon>201702131517292_NameChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702131536535_NameChange_TablePrefix.resx">
+      <DependentUpon>201702131536535_NameChange_TablePrefix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702141009255_NameChange_TablePrefix1.resx">
+      <DependentUpon>201702141009255_NameChange_TablePrefix1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

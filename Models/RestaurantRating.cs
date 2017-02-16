@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-   public class RestaurentRating
+   public class RestaurantRating
     {
        public int Id { get; set; }
         public String UserName { get; set; }
         public int Rating { get; set; }
         public DateTime RetingDate { get; set; }
         public int RestaurentId { get; set; }
-        public Restaurent Restaurent { get; set; }
+        public Restaurant Restaurent { get; set; }
     }
 }

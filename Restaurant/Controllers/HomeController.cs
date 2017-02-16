@@ -16,8 +16,10 @@ namespace Restaurant.Controllers
         }
         public ActionResult Index()
         {
-            var s = _RestaurentService.GetAllRestaurent();
-            return View();
+             var s = _RestaurentService.GetAllRestaurent();
+            var t = s.ToList();
+           
+            return View(t);
         }
 
         public ActionResult About()

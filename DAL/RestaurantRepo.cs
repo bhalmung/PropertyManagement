@@ -4,20 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Data.Entity;
 namespace DAL
 {
    public class RestaurantRepo
     {
-        RestaurentdbContext _Context;
-         public RestaurantRepo(RestaurentdbContext Context)
+        RestaurantdbContext _Context;
+         public RestaurantRepo(RestaurantdbContext Context)
         {
             _Context = Context;
         }
 
-        public IEnumerable<Restaurent> GetAllRestaurents()
+        public IEnumerable<Restaurant> GetAllRestaurents()
         {
-            return _Context.Restaurent.Include("RestaurentComments").Include("RestaurentRatings").AsNoTracking();
+            return _Context.Restaurant.Include(X => X.Ratings).Include(x => x.Comments).AsNoTracking();
         }
     }
 }

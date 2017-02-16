@@ -5,6 +5,6 @@ namespace DomainLogic.Serivce
 {
     public interface IRestaurentService
     {
-        IEnumerable<Restaurent> GetAllRestaurent();
+        IEnumerable<Restaurant> GetAllRestaurent();
     }
 }

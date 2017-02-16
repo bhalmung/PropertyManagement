@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class RestaurentComments
+    public class RestaurantComments
     {
         public int Id { get; set; }
         public string UserName { set; get; }

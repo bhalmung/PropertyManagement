@@ -14,7 +14,7 @@ namespace DomainLogic.Serivce
         public RestaurentService(RestaurantRepo RestaurantRepo ) {
             _RestaurantRepo = RestaurantRepo;
         }
-        public IEnumerable<Restaurent> GetAllRestaurent()
+        public IEnumerable<Restaurant> GetAllRestaurent()
         {
             return _RestaurantRepo.GetAllRestaurents();
         }

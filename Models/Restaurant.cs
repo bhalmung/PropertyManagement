@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-   public class Restaurent
+   
+   public class Restaurant
     {
+          
         public int Id { get; set; }
         public String Name { get; set; }
         public string Address { get; set; }
@@ -15,7 +17,9 @@ namespace Models
         public string City { get; set; }
         public string PostCode { get; set; }
 
-        public List<RestaurentComments> Comments { get; set; }
-        public List<RestaurentRating> Ratings { get; set; }
+        
+
+        public List<RestaurantComments> Comments { get; set; }
+        public List<RestaurantRating> Ratings { get; set; }
     }
 }
