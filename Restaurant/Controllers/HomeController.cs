@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using DomainModels;
 namespace Restaurant.Controllers
 {
     public class HomeController : Controller
@@ -16,10 +16,9 @@ namespace Restaurant.Controllers
         }
         public ActionResult Index()
         {
-             var s = _RestaurentService.GetAllRestaurent();
-            var t = s.ToList();
            
-            return View(t);
+           
+            return View( );
         }
 
         public ActionResult About()

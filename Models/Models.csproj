@@ -7,7 +7,7 @@
     <ProjectGuid>{46278DEC-C8F1-4292-B17F-1EBB120001DB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Models</RootNamespace>
+    <RootNamespace>DomainModels</RootNamespace>
     <AssemblyName>Models</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

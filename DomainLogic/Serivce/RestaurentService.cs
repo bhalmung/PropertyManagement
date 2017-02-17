@@ -1,5 +1,6 @@
 ﻿using DAL;
-using Models;
+ 
+using DomainModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,22 @@ namespace DomainLogic.Serivce
         public IEnumerable<Restaurant> GetAllRestaurent()
         {
             return _RestaurantRepo.GetAllRestaurents();
+        }
+
+        public Restaurant GetByRestaurantId(int RestaurantId)
+        {
+           return _RestaurantRepo.GetByRestaurantId(RestaurantId);
+        }
+
+        public void UpAdd(Restaurant r)
+        {
+            if (r.Id>0)
+            {
+                _RestaurantRepo.Update(r);
+            }else
+            {
+                _RestaurantRepo.Add(r);
+            }
         }
     }
 }
