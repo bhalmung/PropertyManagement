@@ -48,9 +48,12 @@ namespace Restaurant.Controllers
             {
                 return View(Restaurant);
             }
-
-
-           
+        }
+        [HttpDelete]
+        public ActionResult Delete(int RestaurantID)
+        {
+            _RestaurentService.Delete(RestaurantID);
+                return RedirectToAction("Index");
         }
     }
 }

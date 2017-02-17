@@ -22,6 +22,13 @@ namespace DAL
             return _Context.Restaurant.Include(X => X.Ratings).Include(x => x.Comments).AsNoTracking();
         }
 
+        public void Delete(Restaurant r)
+        {
+            _Context.Restaurant.Remove(r);
+
+            _Context.SaveChanges();
+        }
+
         public Restaurant GetByRestaurantId(int restaurantId)
         {
             return _Context.Restaurant.Include(X => X.Ratings).Include(x => x.Comments).FirstOrDefault(x => x.Id == restaurantId);

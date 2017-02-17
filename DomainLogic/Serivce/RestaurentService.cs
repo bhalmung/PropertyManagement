@@ -15,6 +15,14 @@ namespace DomainLogic.Serivce
         public RestaurentService(RestaurantRepo RestaurantRepo ) {
             _RestaurantRepo = RestaurantRepo;
         }
+
+        public void Delete(int restaurantID)
+        {
+            var restuarent = GetByRestaurantId(restaurantID);
+            if(restuarent!=null)
+            _RestaurantRepo.Delete(restuarent);
+        }
+
         public IEnumerable<Restaurant> GetAllRestaurent()
         {
             return _RestaurantRepo.GetAllRestaurents();

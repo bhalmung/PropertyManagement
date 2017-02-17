@@ -9,5 +9,6 @@ namespace DomainLogic.Serivce
         IEnumerable<Restaurant> GetAllRestaurent();
         void UpAdd(Restaurant r);
         Restaurant GetByRestaurantId(int RestaurantId);
+        void Delete(int restaurantID);
     }
 }
