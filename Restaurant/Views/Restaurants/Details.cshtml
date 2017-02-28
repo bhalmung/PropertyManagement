@@ -1,0 +1,9 @@
+﻿@model DomainModels.Restaurant
+
+<h1>@Model.Name</h1> 
+<p>@Model.Description</p>
+<h3>Address</h3>
+<p>@Model.Address<br />@Model.City <br/> @Model.PostCode.<br/> </p>
+
+
+@Html.Partial("_Comments", Model.Comments)

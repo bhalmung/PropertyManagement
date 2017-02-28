@@ -1,6 +1,6 @@
 ﻿ @model DomainModels.Restaurant
 
-
+@Html.ValidationSummary()
 
 <h1>@(Model.Id>0?"Edit ":"Create") Restaurant</h1>
 @using (Html.BeginForm("Edit","Restaurants",FormMethod.Post))
@@ -35,4 +35,5 @@
 }
 
 @Html.ActionLink("Delete", "Delete", new { RestorantID = Model.Id }, new { @class = "btn btn-danger" })
-@Html.ActionLink("Go Back", "Index", null, new { @class = "btn btn-default" },)
+@Html.ActionLink("Go Back", "Index", null, new { @class = "btn btn-default" })
+<link " type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.js"  />

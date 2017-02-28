@@ -74,6 +74,10 @@
     <Compile Include="Migrations\201702141009255_NameChange_TablePrefix1.Designer.cs">
       <DependentUpon>201702141009255_NameChange_TablePrefix1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702281650440_validation.cs" />
+    <Compile Include="Migrations\201702281650440_validation.Designer.cs">
+      <DependentUpon>201702281650440_validation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="RestaurantRepo.cs" />
     <Compile Include="RestaurantdbContext.cs" />
@@ -104,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702141009255_NameChange_TablePrefix1.resx">
       <DependentUpon>201702141009255_NameChange_TablePrefix1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702281650440_validation.resx">
+      <DependentUpon>201702281650440_validation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -24,6 +24,14 @@ namespace Restaurant.Controllers
             return View(s);
         }
 
+        public ActionResult Details(int id)
+        {
+            var s = _RestaurentService.GetByRestaurantId(id);
+
+
+            return View(s);
+        }
+
         public ActionResult Edit(int RestorantID=0)
         {
             var Resturant = RestorantID == 0 ?

@@ -1,0 +1,10 @@
+﻿@model List<DomainModels.RestaurantComments>
+<h3>Comments</h3>
+@foreach (var item in Model)
+{   <div>
+        @item.UserName: <p>@item.Comment</p>
+    </div>
+    <hr />
+}
+<h3>Add new Comment</h3>
+@Html.Action("Index", "Comment")
